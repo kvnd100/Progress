@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../script/game.js" defer></script>
+    <link href="../css/game.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__time">
+            <p class="header__message">Time is running out! ⏳ </p>
+        <h2 class="header__h2">Time 👉 <span class="header__timer">01:00</span></h2>
+        </div>
+        <div class="header__scoreboard">
+            <h2 class="header__h2">Score 💯: <span class="header__score">0</span></h2>
+            <h2 class="header__h2">Highscore 🥇: <span class="header__highscore">0</span></h2>
+            <button class="btn again">Play again !</button>
+        </div>
+    </header>
+
+    
+    <div class="map"><canvas id="game" width="400" height="400"></canvas></div>
+    <div id="test" class="modal hidden">
+        <h2 class="modal__h2">Time 👉 <span class="modal__timer">01:00</span></h2>
+        <div class="modal__box">
+            
+            <img src="../images/question1.png" alt="Questions" class="modal__img">
+            
+            <button class="close-modal--1" value="1">110</button>
+            <button class="close-modal--2" value="2">101</button>
+            <button class="close-modal--3" value="3">100</button>
+            <button class="close-modal--4" value="4">111</button>
+        </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <section class="message">
+        <p class="message__text">
+            Good Luck! 🤞
+        </p>
+    </section>
+    <section class="continue">
+        <button class="btn">Save Score 🛒</button>
+    </section>
+    
+</body>
+</html>
